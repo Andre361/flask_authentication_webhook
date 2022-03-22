@@ -1,0 +1,4 @@
+flask
+argon2-cffi
+requests
+pyjwt==0.4.3
