@@ -168,6 +168,11 @@ class LoginArgs(RequestMixin):
 app = Flask(__name__)
 
 
+@app.route('/')
+def home():
+    return {"message": "welcome"}
+
+
 @app.route("/signup", methods=["POST"])
 def signup_handler():
     args = AuthArgs.from_request(request.get_json())
